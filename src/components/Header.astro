@@ -1,0 +1,36 @@
+---
+import HeaderButton from "./HeaderButton.astro"
+
+console.log('javascript')
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+    <div class="mx-auto text-center mb-8 lg:mb-16">
+        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+            CTF Walkthroughs
+        </h2>
+
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            All the different CTFs
+        </p>
+    </div>
+
+    <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
+        <HeaderButton href="/" class="text-white">
+            <svg slot="before" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M7 21l3 -4" /><path d="M16 21l-2 -4l-3 -3l1 -6" /><path d="M6 12l2 -3l4 -1l3 3l3 1" /></svg>
+            Latest Walkthroughs
+        </HeaderButton>
+        <HeaderButton class="text-white" href="/linux">
+            <svg slot="before" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7l5 5l-5 5" /><path d="M12 19l7 0" /></svg>
+            Linux CTFs
+        </HeaderButton>
+        <HeaderButton class="text-white" href="/windows">
+            <svg slot="before" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.8 20l-12 -1.5c-1 -.1 -1.8 -.9 -1.8 -1.9v-9.2c0 -1 .8 -1.8 1.8 -1.9l12 -1.5c1.2 -.1 2.2 .8 2.2 1.9v12.1c0 1.2 -1.1 2.1 -2.2 1.9z" /><path d="M12 5l0 14" /><path d="M4 12l16 0" /></svg>
+            Windows CTFs
+        </HeaderButton>
+        <HeaderButton class="text-white" href="/about">
+            <svg slot="before"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg>
+            About
+        </HeaderButton>
+    </nav>
+</header>
